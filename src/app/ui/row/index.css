@@ -1,0 +1,10 @@
+audio::-webkit-media-controls-panel {
+    background-color: #EAF0FA;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    fill: #002CFB;
+  }
+  
