@@ -36,10 +36,9 @@ export const RowGrid = ({ item, isLast, getRecordData }: IRowTableCell) => {
         setIsShowAudioPlayer(false)
     }
 
-    // const isShowScript = useMemo(() => item.errors.some(item => item === 'Скрипт не использован'), [item])
-
-    // console.log(item.errors.some(item => item === 'Скрипт не использован'));
-
+    //время в минутах item.time там в секундах
+    console.log( `${Math.trunc(item.time / 60)}:${item.time % 60}`);
+    
 
     return (
         <>
@@ -61,7 +60,7 @@ export const RowGrid = ({ item, isLast, getRecordData }: IRowTableCell) => {
                     <div className="flex justify-end items-center pr-10 ">
                         {
                             isShowAudioPlayer ? <audio controls src={currentRecord} /> : <div>
-                                {item.time}
+                                {`${Math.trunc(item.time / 60)}:${item.time % 60}`}
                             </div>
                         }
                     </div>
