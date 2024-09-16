@@ -62,6 +62,7 @@ interface IGetRecordList {
     in_out?: number
     sort_by?: 'date' | 'duration'
     order?: 'ASC' | 'DESC'
+    limit?: number
 }
 
 export type {

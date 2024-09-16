@@ -20,6 +20,7 @@ export const useMainPagePresenter = (): IReturnMainPagePresenter => {
     const [filter, setFilter] = useState<IGetRecordList>({
         date_end: format(new Date(), 'yyyy-MM-dd'),
         date_start: format(subDays(new Date(), 3), 'yyyy-MM-dd'),
+        limit: 1000
     })
 
     const { data } = useGetCallListData(filter)

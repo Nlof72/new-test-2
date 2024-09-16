@@ -188,7 +188,6 @@ const MainPage = () => {
                     <div className="pr-10 flex flex-col gap-9">
                         {
                             todayCalls.length > 0 && <div>
-                                1
                                 {
                                     todayCalls.map((item, index) => (
                                         <RowGrid
